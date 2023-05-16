@@ -1,70 +1,100 @@
-    <footer role="contentinfo">
-            
-        <div class="footer__menus">
-            <div class="max__width">
+<?php
+    $logo = get_field('logo', 'options');
 
-                <?php while(have_rows('footer_menus', 'options')) : the_row();
+    $phone = get_field('contact_phone', 'options'); 
+    $email = get_field('contact_email', 'options');
 
-                        $footer_menu = get_sub_field('footer_menu');
-                        ?>
-                        <article class="footer__menu">
-                            <h5><?php echo $footer_menu->name; ?> <span class="ion-ios-plus-empty"></span></h5>
+    $address = get_field('contact_address', 'options'); 
+    $address_link = get_field('contact_address_link', 'options');
 
-                            <?php wp_nav_menu(array('menu' => $footer_menu->name, 'container' => false, 'walker' => new clean_walker)); ?>
-                        </article>
+    $column1 = get_field('hide_column_1', 'options');
+    $column2 = get_field('hide_column_2', 'options'); 
+    $column3 = get_field('hide_column_3', 'options'); 
+    $column4 = get_field('hide_column_4', 'options');
+    
+    if($column1){
+        $column_hide = 'style="display: none;"';
+    }
 
-                <?php endwhile; ?>
+    if($column2){
+        $column_hide2 = 'style="display: none;"';
+    }
 
-                <article class="footer__menu contact-info">
-                    <h5>Contact Us <span class="ion-ios-plus-empty"></span></h5>
+    if($column3){
+        $column_hide3 = 'style="display: none;"';
+    }
 
-                    <ul>
-                        <li><i class="fa fa-phone"></i><a href="tel:01707642255">01707 642255</a></li>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:info@youandeyeopticians.co.uk">info@youandeyeopticians.co.uk</a></li>
-                    </ul>
-                </article>
+    if($column4){
+        $column_hide4 = 'style="display: none;"';
+    }
+?>
 
-                <article class="footer__menu social">
-                   <h5>Follow Us <span class="ion-ios-plus-empty"></span></h5>
-                    <?php if(get_field('header_social', 'options')): ?>
-                        <ul class="social-wrapper">
-                            <?php while(have_rows('header_social', 'options')) : the_row(); ?>
-                                <li>
-                                    <a href="<?php the_sub_field('header_social_url'); ?>" title="<?php the_sub_field('header_social_platform'); ?>" target="_blank">
-                                        <i class="<?php the_sub_field('header_social_icon'); ?>"></i>
-                                    </a>
-                                </li>
-                            <?php endwhile; ?>
-                        </ul><!-- header__social -->
+<footer role="contentinfo">
+        
+    <div class="footer__menus">
+        <div class="max__width">
 
-                    <?php endif; ?>
+            <?php while(have_rows('footer_menus', 'options')) : the_row();
 
-                </article>
+                    $footer_menu = get_sub_field('footer_menu');
+                    ?>
+                    <article class="footer__menu" <?php echo $column_hide; ?>>
+                        <h5><?php echo $footer_menu->name; ?> <span class="ion-ios-plus-empty"></span></h5>
 
-                <article class="footer__menu find-us">
-                    <h5>Find Us</h5>
+                        <?php wp_nav_menu(array('menu' => $footer_menu->name, 'container' => false, 'walker' => new clean_walker)); ?>
+                    </article>
 
-                    <div class="contact">
-                        <a href="https://www.google.com/maps/place/You+and+Eye+Opticians/@51.6980069,-0.2001388,15z/data=!4m5!3m4!1s0x48763d4c92d650b5:0xd67800570fb9d078!8m2!3d51.6980119!4d-0.1913963" target="_blank">106 Darkes Lane,<br>
-                        Potters Bar,<br>
-                        Herts,<br>
-                        EN6 1AE</a>
-                    </div>
-                </article>
+            <?php endwhile; ?>
 
-            </div><!-- max__width -->
+            <article class="footer__menu contact-info" <?php echo $column_hide2; ?>>
+                <h5>Contact Us <span class="ion-ios-plus-empty"></span></h5>
 
-        </div><!-- footer__menus -->
+                <ul>
+                    <li><i class="fa fa-phone"></i><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></li>
+                    <li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
+                </ul>
+            </article>
 
-        <div class="subfooter">
-            <div class="subfooter__credits">
-                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
-                <p>&copy;<?php bloginfo('name') ?> <?php echo date("Y"); ?></p>
-                <p class="credit"><a href="https://thomson-website-solutions.com/" target="_blank">Website by Thomson Website Solutions</a></p>
-            </div><!-- subfooter__credits -->
-        </div><!-- subfooter -->
-            
-    </footer>
+            <article class="footer__menu find-us" <?php echo $column_hide3; ?>>
+                <h5>Find Us</h5>
+
+                <div class="contact">
+                    <a href="<?php echo $address_link; ?>" target="_blank">
+                        <?php echo $address; ?>
+                    </a>
+                </div>
+            </article>
+
+            <article class="footer__menu social" <?php echo $column_hide4; ?>>
+                <h5>Follow Us <span class="ion-ios-plus-empty"></span></h5>
+                <?php if(get_field('header_social', 'options')): ?>
+                    <ul class="social-wrapper">
+                        <?php while(have_rows('header_social', 'options')) : the_row(); ?>
+                            <li>
+                                <a href="<?php the_sub_field('header_social_url'); ?>" title="<?php the_sub_field('header_social_platform'); ?>" target="_blank">
+                                    <i class="<?php the_sub_field('header_social_icon'); ?>"></i>
+                                </a>
+                            </li>
+                        <?php endwhile; ?>
+                    </ul><!-- header__social -->
+
+                <?php endif; ?>
+
+            </article>
+
+        </div><!-- max__width -->
+
+    </div><!-- footer__menus -->
+
+    <div class="subfooter">
+        <div class="subfooter__credits">
+            <img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>">
+            <p>&copy;<?php bloginfo('name') ?> <?php echo date("Y"); ?></p>
+            <p class="credit"><a href="https://thomson-website-solutions.com/" target="_blank">Website by Thomson Website Solutions</a></p>
+        </div><!-- subfooter__credits -->
+    </div><!-- subfooter -->
+        
+</footer>
 
 </div><!-- #page -->
 

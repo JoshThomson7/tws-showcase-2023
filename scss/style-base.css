@@ -24146,6 +24146,9 @@ section.banners .banner__bg__img {
   top: 0;
   left: 0;
   z-index: 1;
+  transform: translateZ(0);
+  animation: 16s forwards zoomScale;
+  transform-origin: center center 0;
 }
 section.banners .banner__caption__skew {
   width: 70%;

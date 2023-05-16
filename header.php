@@ -8,9 +8,6 @@
 
     <?php wp_head(); ?>
 
-    <script src="https://pxportal.xeyex.co.uk/ob/x3edabac23446401cfg"></script>
-    <script src="https://pxportal.xeyex.co.uk/ob/x3edabac23446401"></script>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -20,6 +17,12 @@
         if(get_field('general_background_image')){
             $general_background_image = 'class="background-sphere"';
         }
+
+        $logo = get_field('logo', 'options');
+
+        $phone = get_field('contact_phone', 'options'); 
+        $email = get_field('contact_email', 'options'); 
+                                
     ?>
 
     <?php require_once('modules/off-canvas-nav/templates/oc-menu.php'); ?>
@@ -48,7 +51,8 @@
                     <div class="header_logo_menu">
                         <div class="logo">
                             <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
+
+                                <img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>">
                             </a>
                         </div><!-- logo -->
                     </div>
@@ -56,8 +60,8 @@
                     <div class="header__cta">
 
                         <ul class="contact">
-                            <li><i class="fa fa-phone"></i><a href="tel:01707642255">01707 642255</a></li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:info@youandeyeopticians.co.uk">info@youandeyeopticians.co.uk</a></li>
+                            <li><i class="fa fa-phone"></i><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
                         </ul>
 
                         <div class="header__menu">
