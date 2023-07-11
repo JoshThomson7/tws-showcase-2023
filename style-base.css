@@ -20181,6 +20181,10 @@ table {
 	Custom Login
 	Description: Style the WordPress Login page
 */
+.language-switcher {
+  display: none;
+}
+
 html body.login {
   min-height: 600px;
   display: flex;
@@ -20200,13 +20204,13 @@ html .login h1 {
   padding: 20px 0;
 }
 html .login h1 a {
-  background: url(img/logo.png) no-repeat scroll 0 0 transparent;
-  background-size: 125px auto;
+  background: url(img/tws-logo-iso.png) no-repeat scroll 0 0 transparent;
+  background-size: 175px auto;
   display: block;
   margin: 0 auto;
-  width: 125px;
+  width: 175px;
   padding: 0;
-  height: 125px;
+  height: 95px;
 }
 html .login #login_error {
   margin: 0 20px 20px !important;

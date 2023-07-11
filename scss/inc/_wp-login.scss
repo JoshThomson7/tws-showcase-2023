@@ -3,6 +3,8 @@
 	Description: Style the WordPress Login page
 */
 
+.language-switcher{display: none;}
+
 html {
 
 	body.login {
@@ -21,7 +23,7 @@ html {
 
 		/* Logo */
 		h1 { padding:20px 0;
-			a { background:url(img/logo.png) no-repeat scroll 0 0 transparent; background-size: 125px auto; display:block; margin:0 auto; width: 125px; padding:0; height: 125px;}
+			a { background:url(img/tws-logo-iso.png) no-repeat scroll 0 0 transparent; background-size: 175px auto; display:block; margin:0 auto; width: 175px; padding:0; height: 95px;}
 		}
 
 		/* Error Message */
