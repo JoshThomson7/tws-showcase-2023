@@ -9,7 +9,7 @@ global $post;
 
 require_once('modules/advanced-video-banners/templates/avb-inner.php');
 
-flexible_content();
+thomson_content();
 
 get_footer();
 ?>

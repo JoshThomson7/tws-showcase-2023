@@ -1,15 +1,15 @@
 <?php
 /**
- * Flexible Content Functions
+ * Thomson Content Functions
  *
- * @package flexible-content/
+ * @package thomson-content/
  * @version 1.0
  * @dependencies
  *    - ACF PRO: https://www.advancedcustomfields.com/pro/
 */
 
-function flexible_content() {
-    include(get_stylesheet_directory().'/modules/flexible-content/flexible-content.php');
+function thomson_content() {
+    include(get_stylesheet_directory().'/modules/thomson-content/thomson-content.php');
 }
 
 function fc_field_section($row_layout, $open_close) {

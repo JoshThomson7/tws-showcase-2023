@@ -15,7 +15,7 @@ function oc_nav_ajax() {
 
     // DEBUG
     $reuse_id = 'option';
-    require(get_stylesheet_directory().'/modules/flexible-content/templates/fc-masonry.php');
+    require(get_stylesheet_directory().'/modules/thomson-content/templates/fc-masonry.php');
 
 	wp_die();
 }

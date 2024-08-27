@@ -33,7 +33,7 @@
 // Modules
 @import '../modules/off-canvas-nav/scss/oc-nav';
 @import '../modules/advanced-video-banners/scss/avb';
-@import '../modules/flexible-content/scss/flexible-content';
+@import '../modules/thomson-content/scss/thomson-content';
 @import '../modules/advanced-slide-menu/scss/asm';
 
 /* -------------------------------------------
@@ -508,7 +508,7 @@ section {
 
 // HOME BACKGROUND
 .home{
-    .flexible__content{
+    .thomson__content{
         .fc_circle_masonry{
             background-image: url('img/left-elipse.png'); background-position: top left; background-repeat: no-repeat; background-size: contain;
         }
@@ -516,7 +516,7 @@ section {
 }
 
 .home{
-    .flexible__content{
+    .thomson__content{
         .fc_featured_testimonials{
             background-image: url('img/right-elipse.png'); background-position: top right; background-repeat: no-repeat; background-size: contain;
         }

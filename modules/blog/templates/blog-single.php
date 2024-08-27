@@ -27,7 +27,7 @@ global $post;
                     <?php the_content(); ?>   
                 <?php endwhile; ?>
 
-                <?php flexible_content(); ?>
+                <?php thomson_content(); ?>
             </article>
 
             <?php require_once('blog-sidebar.php'); ?>

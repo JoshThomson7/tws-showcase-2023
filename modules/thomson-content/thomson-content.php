@@ -1,6 +1,6 @@
 <?php
 /*
-*   Flexible Content
+*   Thomson Content
 *
 *   Includes files for different content types
 */
@@ -11,21 +11,21 @@
 //     $image_bg = 'style="background-image: url('. get_field('image_bg') .')"';
 // }
 
-// echo '<div '. $image_bg .' class="flexible__content">';
-// //flexible__content give it css properties
+// echo '<div '. $image_bg .' class="thomson__content">';
+// //thomson__content give it css properties
 
 // Tabs scrollbar
-if(get_field('fc_tab_scroller')) {
-    require('templates/_fc-tabs-scrollbar.php');
+if(get_field('thomson_scroller')) {
+    require('templates/_thomson-scrollbar.php');
 }
 
-if(have_rows('fc_content_types')):
+if(have_rows('thomson_content_modules')):
 
     $row_count = 1;
 
-    echo '<div class="flexible__content">';
+    echo '<div class="thomson__content">';
 
-    while(have_rows('fc_content_types')) : the_row();
+    while(have_rows('thomson_content_modules')) : the_row();
 
         // open section - see fc-functions.php
         $open = fc_field_section(get_row_layout(), 'open');
@@ -170,7 +170,7 @@ if(have_rows('fc_content_types')):
 
     $row_count++; endwhile;
 
-    echo '</div><!-- flexible__content -->';
+    echo '</div><!-- thomson__content -->';
 
 endif;
 ?>

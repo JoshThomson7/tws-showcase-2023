@@ -88,7 +88,7 @@ avb_banners('inner');
 </section>
 <?php 
 
-flexible_content();
+thomson_content();
 
 get_footer();
 ?>

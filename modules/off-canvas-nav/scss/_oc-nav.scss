@@ -29,7 +29,7 @@
 
         &__panel { width: 50%; transition: all .5s ease; position: relative;
 
-            @import '../../../modules/flexible-content/scss/inc/fc-masonry';
+            @import '../../../modules/thomson-content/scss/inc/fc-masonry';
 
             .fc_masonry {
                 .masonry__wrapper {

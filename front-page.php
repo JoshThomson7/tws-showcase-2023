@@ -4,8 +4,9 @@
 */
 get_header();
 
-require_once('modules/advanced-video-banners/templates/avb-home.php');
+echo do_shortcode('[smartslider3 slider="2"]');
 
-flexible_content();
+the_content();
+// thomson_content();
 
 get_footer(); ?>

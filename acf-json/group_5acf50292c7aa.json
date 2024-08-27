@@ -20,8 +20,8 @@
         },
         {
             "key": "field_5481ed66995b2",
-            "label": "Flexible content",
-            "name": "fc_content_types",
+            "label": "Thomson Content",
+            "name": "thomson_content_modules",
             "type": "flexible_content",
             "instructions": "Use this to add different types of content to this page.",
             "required": 0,

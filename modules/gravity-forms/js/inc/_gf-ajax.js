@@ -48,7 +48,7 @@ jQuery(document).ready(function($){
 
         // hide pop-up
         $('.gf__modal__form__overlay').removeClass('open');
-        $(this).closest('.flexible__content').removeAttr('style');
+        $(this).closest('.thomson__content').removeAttr('style');
         $('body').removeClass('no__scroll');
 
         setTimeout(function() {
