@@ -2,9 +2,9 @@
     Contact
 */
 
-.fc_contact {
+.thomson_contact {
 
-    .fc_contact_wrapper { display: flex;
+    .thomson_contact_wrapper { display: flex;
         @include breakpoint(mamabear) { flex-direction: column;}
 
         article { flex:1 0 auto;

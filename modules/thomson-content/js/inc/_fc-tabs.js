@@ -12,7 +12,7 @@ Tabs
 
 jQuery(document).ready(function($){
 
-    $('.fc_tabs ul.tabbed li').click(function() {
+    $('.thomson_tabs ul.tabbed li').click(function() {
         $('ul.tabbed li').removeClass('active');
         $(this).addClass('active');
         $('.tab__content').hide();
@@ -21,6 +21,6 @@ jQuery(document).ready(function($){
         return false;
     });
 
-    $('.fc_tabs ul.tabbed li:first').trigger('click');
+    $('.thomson_tabs ul.tabbed li:first').trigger('click');
 
 });

@@ -14,7 +14,7 @@
         </article>
 
         <article class="oc__nav__content__panel panel__right">
-            <div id="oc_nav_response" class="fc_masonry"></div>
+            <div id="oc_nav_response" class="thomson_masonry"></div>
         </article>
     </div><!-- oc__nav__content -->
 </nav><!-- off__canvas__nav -->

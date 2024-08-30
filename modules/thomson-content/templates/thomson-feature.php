@@ -40,7 +40,7 @@ if(get_sub_field('feature_video_id')) {
 }
 ?>
 
-<div class="fc_feature_wrapper<?php echo $feature_img_align; ?>">
+<div class="thomson_feature_wrapper<?php echo $feature_img_align; ?>">
     <div class="feature__image<?php echo $feature_img_bg; ?>">
         <?php echo $feature_img_video; ?>
         <img src="<?php echo $feature_img['url']; ?>" alt="" />
@@ -60,4 +60,4 @@ if(get_sub_field('feature_video_id')) {
             </div><!-- feature__action -->
         <?php endif; ?>
     </div><!-- feature__text -->
-</div><!-- fc_feature_wrapper -->
+</div><!-- thomson_feature_wrapper -->

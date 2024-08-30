@@ -6,7 +6,7 @@
 $map = get_sub_field('contact_address');
 ?>
 
-    <div class="fc_contact_wrapper">
+    <div class="thomson_contact_wrapper">
         <article>
             <ul>
                 <li class="address"><i class="ion-ios-location"></i> <span><?php echo str_replace(', ', '<br>', $map['address']); ?></span></li>
@@ -76,4 +76,4 @@ $map = get_sub_field('contact_address');
             </script>
             <div id="map_single"></div>
         </article>
-    </div><!-- fc_contact_wrapper -->
+    </div><!-- thomson_contact_wrapper -->

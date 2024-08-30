@@ -1,16 +1,9 @@
 /*
-------------------------------------------------
-   ______      ____
-  / ____/___ _/ / /__  _______  __
- / / __/ __ `/ / / _ \/ ___/ / / /
-/ /_/ / /_/ / / /  __/ /  / /_/ /
-\____/\__,_/_/_/\___/_/   \__, /
-                         /____/
-------------------------------------------------
 Gallery
 */
+
 jQuery(document).ready(function($){
-	$(".fc_gallery .gallery__images").lightGallery({
+	$(".thomson_gallery .gallery__images").lightGallery({
         hash: false,
         download: false
     });

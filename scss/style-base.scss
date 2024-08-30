@@ -31,7 +31,7 @@
 @import '../lib/slick/scss/slick';
 
 // Modules
-@import '../modules/off-canvas-nav/scss/oc-nav';
+@import '../modules/off-canvas-nav/scss/oc-nav'; 
 @import '../modules/advanced-video-banners/scss/avb';
 @import '../modules/thomson-content/scss/thomson-content';
 @import '../modules/advanced-slide-menu/scss/asm';
@@ -362,7 +362,7 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
             }
 
             .header__menu{
-                display: flex; align-items: center; margin-top: 30px;
+                display: flex; align-items: center;
                 @include breakpoint(papabear) { display: none;}
            
                 ul { display: flex; align-items: center;
@@ -504,30 +504,6 @@ section {
     // gradients
     &.circle__gradient__left { background-image: url('img/half-circle-gradient-top-left.png'); background-position: top left; background-repeat: no-repeat;}
    
-}
-
-// HOME BACKGROUND
-.home{
-    .thomson__content{
-        .fc_circle_masonry{
-            background-image: url('img/left-elipse.png'); background-position: top left; background-repeat: no-repeat; background-size: contain;
-        }
-    }
-}
-
-.home{
-    .thomson__content{
-        .fc_featured_testimonials{
-            background-image: url('img/right-elipse.png'); background-position: top right; background-repeat: no-repeat; background-size: contain;
-        }
-    }
-}
-
-// INFO WINDOW || ABOUT OUR AREA
-.wpgmza-infowindow{
-    p{
-        line-height: 18px!important;
-    }
 }
 
 .footer-blog-posts{
@@ -859,132 +835,5 @@ footer { padding: 0; position: relative;
     }
 }
 
-// LANDING FORM
-#landingForm .gform_wrapper form .gform_body ul.gform_fields li.gfield .gfield_label{
-    color: white!important;
-}
-
-// XEYEX BOOKING
-#x3edabac23446401{
-    div{
-        display: flex; justify-content: center;
-        @include breakpoint(teenbear){
-            flex-direction: column; align-items: center;
-        }
-
-        button{
-            margin-right: 10px; font-family: $primaryFont; color: white;
-            @include breakpoint(teenbear){ margin-bottom: 10px;}
-
-        }
-
-        table{
-            margin: 0 20px;
-        }
-    }
-
-    .xeyexAppTimes{
-        flex-direction: column; align-items: center;
-
-        div{
-            display: flex; flex-direction: row; align-items: center;
-            @include breakpoint(teenbear){
-                flex-direction: column;
-            }
-        }
-
-        button{
-            margin: 8px 10px;
-        }
-    }
-
-    form{
-        #pxDetails{
-            flex-direction: column;
-
-            .xeyexSubHeader{
-                padding-bottom: 10px; color: $secondary; margin-top: 20px; font-size: 20px;
-            }
-
-            .xeyexFieldMaster{
-                padding-bottom: 10px;
-
-                label{
-                    padding-right: 10px;
-                }
-
-                #xeyexPMS_dob{
-                    select{
-                        margin-right: 5px;
-                    }
-                }
-            }
-
-            input[type=submit]{
-                color: white; align-self: center!important; margin-top: 20px;
-            }
-        }
-    }
-
-    .s7css{
-        flex-direction: column; margin-bottom: 30px;
-
-        .s7cssxeyexCFMTitle, .s7cssxeyexCFMTitle{
-           color: $secondary; font-size: 18px; margin-bottom: 10px;
-        }
-    }
-
-    #s7AppointmentType, #Time, #s7YourDetails{ 
-        width: 25%;
-    }
-
-    #s7YourDetails p{
-        margin: 0; line-height: 20px;
-    }
-
-    input[type=button]{
-        color: white; align-self: center!important; margin: 20px auto 0;
-    }
-}
-
 // Modules
 @import '../modules/gravity-forms/scss/gf';
-
-.page-id-399{
-    .banner{
-        @include breakpoint(sisterbear){
-            background-image: none!important;
-        }
-    }
-}
-
-.pay-template{
-    h1 { line-height: 38px; font-size: 32px; color: $primary;}
-
-    form{
-        margin-top: 20px;
-
-        input[type="text"]{
-            appearance: none; -webkit-appearance: none; border-radius: 3px; padding: 15px; background: #f1f5f7; color: #6b8aa2; border: none; border-bottom: 1px transparent solid; line-height: normal; display: block; width: 50%; transition: all 0.3s ease-in-out; box-sizing: border-box; font-size: 16px; height: auto !important;
-        }
-
-        input[type="submit"]{
-            margin-top: 10px; font-family: "Mont", sans-serif; padding: 14px 60px 9px; font-size: 20px; font-size: 1.25rem; border-radius: 3px; background: #022e4f; font-weight: 700; color: #fff; display: inline-block; border: 0; height: auto !important; transition: all 0.3s ease-in-out;
-        }
-    }
-}
-
-// CUSTOM FOR YOU AND EYE
-
-// ABOUT PAGE
-.page-id-3627850{
-    .feature__image{
-        width: 25%!important;
-        @include breakpoint(teenbear){width: 100%!important;}
-    }
-
-    .feature__text{
-        width: 75%!important;
-        @include breakpoint(teenbear){width: 100%!important; text-align: center;}
-    }
-}

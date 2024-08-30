@@ -8,7 +8,7 @@
 *	@version 1.0
 */
 
-.fc_tab_scrollbar { position: relative; z-index: 2; position: sticky; top: 0; background: #fff;
+.thomson_tab_scrollbar { position: relative; z-index: 2; position: sticky; top: 0; background: #fff;
     @include breakpoint(cousinbear) { display: none;}
 
     ul { display: flex; justify-content: space-around; align-items: center; border-bottom: 1px darken($lightgrey, 3%) solid;

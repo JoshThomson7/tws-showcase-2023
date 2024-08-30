@@ -4,7 +4,7 @@
 */
 ?>
 
-<div class="fc_timeline_wrapper">
+<div class="thomson_timeline_wrapper">
     <?php
     $step = 1;
     while(have_rows('timeline')) : the_row();
@@ -23,4 +23,4 @@
             </article>
         </div><!-- timeline__row -->
     <?php $step++; endwhile; ?>
-</div><!-- fc_timeline_wrapper -->
+</div><!-- thomson_timeline_wrapper -->

@@ -14,7 +14,7 @@ if(get_sub_field('feature_boxes_animate')) {
 }
 ?>
 
-<div class="fc_feature_boxes_persona_wrapper">
+<div class="thomson_feature_boxes_persona_wrapper">
     <?php
         while(have_rows('feature_boxes')) : the_row();
 
@@ -22,7 +22,7 @@ if(get_sub_field('feature_boxes_animate')) {
     ?>
         <article class="<?php echo $per_row_class ?>">
 
-            <div class="fc__feature__box__inner">
+            <div class="thomson__feature__box__inner">
 
                 <?php if(get_sub_field('feature_box_icon')): ?>
                     <div class="top_icon">
@@ -48,7 +48,7 @@ if(get_sub_field('feature_boxes_animate')) {
                 ?>
                     <a href="<?php the_sub_field('feature_box_button_url'); ?>" class="fom"<?php echo $gf_id; ?>><?php the_sub_field('feature_box_button_label'); ?> <i class="ion-arrow-right-c"></i></a>
                 <?php endif; ?>
-            </div><!-- fc__feature__box__inner -->
+            </div><!-- thomson__feature__box__inner -->
         </article>
     <?php endwhile; ?>
-</div><!-- fc_feature_boxes_wrapper -->
+</div><!-- thomson_feature_boxes_wrapper -->

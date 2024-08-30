@@ -1,92 +1,80 @@
-/*
---------------------------------------------------------------------------------
-    ________          _ __    __        ______            __             __
-   / ____/ /__  _  __(_) /_  / /__     / ____/___  ____  / /____  ____  / /_
-  / /_  / / _ \| |/_/ / __ \/ / _ \   / /   / __ \/ __ \/ __/ _ \/ __ \/ __/
- / __/ / /  __/>  </ / /_/ / /  __/  / /___/ /_/ / / / / /_/  __/ / / / /_
-/_/   /_/\___/_/|_/_/_.___/_/\___/   \____/\____/_/ /_/\__/\___/_/ /_/\__/
-
---------------------------------------------------------------------------------
-Flexible Content
-*/
-
 @import 'fc-tab-scrollbar';
 
 .thomson__content { z-index: 999; 
 
-    @import 'fc-global'; 
+    @import 'thomson-global'; 
 
-    @import 'inc/fc-general-text';
+    @import 'inc/thomson-general-text';
 
     // Buttons
-    @import 'inc/fc-buttons';
+    @import 'inc/thomson-buttons';
 
     // Free Text
-    @import 'inc/fc-free-text';
+    @import 'inc/thomson-free-text';
 
     // Feature
-    @import 'inc/fc-feature';
+    @import 'inc/thomson-feature';
 
     // Icon Grid
-    @import 'inc/fc-icon-grid';
+    @import 'inc/thomson-icon-grid'; 
 
     // Grid Links
-    @import 'inc/fc-grid-links';
+    @import 'inc/thomson-grid-links';
 
     // Accordion
-    @import 'inc/fc-accordion';
+    @import 'inc/thomson-accordion'; 
 
     // Tabs
-    @import 'inc/fc-tabs';
+    @import 'inc/thomson-tabs';
 
     // Gallery
-    @import 'inc/fc-gallery';
+    @import 'inc/thomson-gallery';
 
     // Table
-    @import 'inc/fc-table';
+    @import 'inc/thomson-table';
 
     // Video
-    @import 'inc/fc-video';
+    @import 'inc/thomson-video';
 
     // Carousel
-    @import 'inc/fc-carousel';
+    @import 'inc/thomson-carousel';
 
     // Team
-    @import 'inc/fc-team';
-    @import 'inc/fc-team-popup';
+    @import 'inc/thomson-team';
+    @import 'inc/thomson-team-popup';
 
     // 2 Column Boxes
-    @import 'inc/fc-column-boxes';
+    @import 'inc/thomson-column-boxes';
 
     // Timeline
-    @import 'inc/fc-timeline';
+    @import 'inc/thomson-timeline';
 
     // Call to action
-    @import 'inc/fc-call-to-action';
+    @import 'inc/thomson-call-to-action';
 
     // Grid Boxes
-    @import 'inc/fc-grid-boxes';
+    @import 'inc/thomson-grid-boxes';
 
     // Grid Boxes
-    @import 'inc/fc-testimonials';
+    @import 'inc/thomson-testimonials';
 
     // Contact
-    @import 'inc/fc-contact';
+    @import 'inc/thomson-contact';
 
     // Feature Boxes
-    @import 'inc/fc-feature-boxes';
+    @import 'inc/thomson-feature-boxes';
 
     // Feature Boxes Persona
-    @import 'inc/fc-feature-boxes-persona';
+    @import 'inc/thomson-feature-boxes-persona';
 
     // Masonry
-    @import 'inc/fc-masonry';
+    @import 'inc/thomson-masonry';
 
     // Circle Masonry
-    @import 'inc/fc-masonry-circles';
+    @import 'inc/thomson-masonry-circles';
 
     // Featured testimonials
-    @import 'inc/fc-featured-testimonials';
+    @import 'inc/thomson-featured-testimonials';
 
     .aef .aef__listings { max-width: 850px; margin: 0 auto;}
 

@@ -1,10 +1,10 @@
 /*
-    Bluecoat - Press
+    Timeline
 */
 
-.fc_timeline { padding: 10px 20px;
+.thomson_timeline { padding: 10px 20px;
 
-    .fc_timeline_wrapper {
+    .thomson_timeline_wrapper {
         .timeline__row { display: flex; justify-content: flex-start;
             @include breakpoint(brotherbear) { margin-bottom: 40px;
                 &:last-child { margin-bottom: 0;}
@@ -67,7 +67,7 @@
     }
 
     &.grey {
-        .fc_timeline_wrapper {
+        .thomson_timeline_wrapper {
             .timeline__row {
                 article { box-shadow: 4px 0 0 0 #fff;
                     @include breakpoint(brotherbear) { box-shadow: none;}

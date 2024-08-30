@@ -1,13 +1,5 @@
 <?php
 /*
----------------------------------------------------
-    ____                    ______     _     __
-   /  _/________  ____     / ____/____(_)___/ /
-   / // ___/ __ \/ __ \   / / __/ ___/ / __  /
- _/ // /__/ /_/ / / / /  / /_/ / /  / / /_/ /
-/___/\___/\____/_/ /_/   \____/_/  /_/\__,_/
-
----------------------------------------------------
 Icon Grid
 */
 // Iterms per row
@@ -21,7 +13,7 @@ if(!$text_align) {
 
 ?>
 
-<div class="fc_icon_grid_wrapper <?php echo $text_align; ?>">
+<div class="thomson_icon_grid_wrapper <?php echo $text_align; ?>">
     <?php
         while(have_rows('icon_grid')) : the_row();
 
@@ -48,4 +40,4 @@ if(!$text_align) {
             <?php if(get_sub_field('icon_grid_links_to')): ?></a><?php endif; ?>
         </article>
     <?php endwhile; ?>
-</div><!-- fc_icon_grid_wrapper -->
+</div><!-- thomson_icon_grid_wrapper -->

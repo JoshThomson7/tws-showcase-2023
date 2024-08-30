@@ -27,141 +27,131 @@ if(have_rows('thomson_content_modules')):
 
     while(have_rows('thomson_content_modules')) : the_row();
 
-        // open section - see fc-functions.php
+        // open section - see thomson-functions.php
         $open = fc_field_section(get_row_layout(), 'open');
 
         if(!$open['skip_open']) {
             echo $open['html'];
         }
 
-        if(get_row_layout() === 'fc_accordion'):
+        if(get_row_layout() === 'thomson_accordion'):
 
             // Accordion
-            require('templates/fc-accordion.php');
+            require('templates/thomson-accordion.php');
 
-        elseif(get_row_layout() === 'fc_buttons'):
+        elseif(get_row_layout() === 'thomson_buttons'):
 
             // Button
-            require('templates/fc-buttons.php');
+            require('templates/thomson-buttons.php');
 
-        elseif(get_row_layout() === 'fc_apf_branches_map'):
-
-            // APF Branches Map
-            require('templates/fc-apf-branches-map.php');
-
-        elseif(get_row_layout() === 'fc_cta'):
+        elseif(get_row_layout() === 'thomson_cta'):
 
             // Call to action
-            require('templates/fc-call-to-action.php');
+            require('templates/thomson-call-to-action.php');
 
-        elseif(get_row_layout() === 'fc_carousel_images'):
+        elseif(get_row_layout() === 'thomson_carousel_images'):
 
             // Carousel
-            require('templates/fc-carousel.php');
+            require('templates/thomson-carousel.php');
 
-        elseif(get_row_layout() === 'fc_contact'):
+        elseif(get_row_layout() === 'thomson_contact'):
 
             // Contact
-            require('templates/fc-contact.php');
+            require('templates/thomson-contact.php');
 
-        elseif(get_row_layout() === 'fc_feature'):
+        elseif(get_row_layout() === 'thomson_feature'):
 
             // Feature
-            require('templates/fc-feature.php');
+            require('templates/thomson-feature.php');
 
-        elseif(get_row_layout() === 'fc_feature_boxes'):
+        elseif(get_row_layout() === 'thomson_feature_boxes'):
 
             // Feature Boxes
-            require('templates/fc-feature-boxes.php');
+            require('templates/thomson-feature-boxes.php');
 
-        elseif(get_row_layout() === 'fc_feature_boxes_persona'):
+        elseif(get_row_layout() === 'thomson_feature_boxes_persona'):
 
             // Feature Boxes Persona
-            require('templates/fc-feature-boxes-persona.php');
+            require('templates/thomson-feature-boxes-persona.php');
 
-        elseif(get_row_layout() === 'fc_free_text'):
+        elseif(get_row_layout() === 'thomson_text'):
 
             // Free Text
-            require('templates/fc-free-text.php');
+            require('templates/thomson-text.php');
 
-        elseif(get_row_layout() === 'fc_gallery'):
+        elseif(get_row_layout() === 'thomson_gallery'):
 
             // Gallery
-            require('templates/fc-gallery.php');
+            require('templates/thomson-gallery.php');
 
-        elseif(get_row_layout() === 'fc_grid_boxes'):
+        elseif(get_row_layout() === 'thomson_grid_boxes'):
 
             // Grid Boxes
-            require('templates/fc-grid-boxes.php');
+            require('templates/thomson-grid-boxes.php');
 
-        elseif(get_row_layout() === 'fc_icon_grid'):
+        elseif(get_row_layout() === 'thomson_icon_grid'):
 
             // Grid icons
-            require('templates/fc-grid-icons.php');
+            require('templates/thomson-grid-icons.php');
 
-        elseif(get_row_layout() === 'fc_grid_links'):
+        elseif(get_row_layout() === 'thomson_grid_links'):
 
             // Grid links
-            require('templates/fc-grid-links.php');
+            require('templates/thomson-grid-links.php');
 
-        elseif(get_row_layout() === 'fc_masonry'):
+        elseif(get_row_layout() === 'thomson_masonry'):
 
             // Masonry
-            require('templates/fc-masonry.php');
+            require('templates/thomson-masonry.php');
 
-        elseif(get_row_layout() === 'fc_properties'):
-
-            // Properties
-            require('templates/fc-properties.php');
-
-        elseif(get_row_layout() === 'fc_tabs'):
+        elseif(get_row_layout() === 'thomson_tabs'):
 
             // Tabs
-            require('templates/fc-tabs.php');
+            require('templates/thomson-tabs.php');
 
-        elseif(get_row_layout() === 'fc_table'):
+        elseif(get_row_layout() === 'thomson_table'):
 
             // Table
-            require('templates/fc-table.php');
+            require('templates/thomson-table.php');
 
-        elseif(get_row_layout() === 'fc_timeline'):
+        elseif(get_row_layout() === 'thomson_timeline'):
 
             // Timeline
-            require('templates/fc-timeline.php');
+            require('templates/thomson-timeline.php');
 
-        elseif(get_row_layout() === 'fc_team'):
+        elseif(get_row_layout() === 'thomson_team'):
 
             // Team (Custom)
-            require('templates/fc-team.php');
+            require('templates/thomson-team.php');
 
-        elseif(get_row_layout() === 'fc_team_full'):
+        elseif(get_row_layout() === 'thomson_team_full'):
 
             // Team (Full)
-            require('templates/fc-team-full.php');
+            require('templates/thomson-team-full.php');
 
-        elseif(get_row_layout() === 'fc_testimonials'):
+        elseif(get_row_layout() === 'thomson_testimonials'):
 
             // Testimonials
-            require('templates/fc-testimonials.php');
+            require('templates/thomson-testimonials.php');
 
-        elseif(get_row_layout() === 'fc_video'):
+        elseif(get_row_layout() === 'thomson_video'):
 
             // Video
-            require('templates/fc-video.php');
+            require('templates/thomson-video.php');
             
-        elseif(get_row_layout() === 'fc_circle_masonry'):
+        elseif(get_row_layout() === 'thomson_circle_masonry'):
 
             // Masonry Circles
-            require('templates/fc-masonry-circles.php');
+            require('templates/thomson-masonry-circles.php');
 
-        elseif(get_row_layout() === 'fc_featured_testimonials'):
+        elseif(get_row_layout() === 'thomson_featured_testimonials'):
 
             // Featured Testimonials
-            require('templates/fc-featured-testimonials.php');
+            require('templates/thomson-featured-testimonials.php');
         
         endif;
 
-        // close section - see fc-functions.php
+        // close section - see thomson-functions.php
         $close = fc_field_section(get_row_layout(), 'close');
 
         if(!$close['skip_close']) {
